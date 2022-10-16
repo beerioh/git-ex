@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projects/bookShop/css/main.css">
+    <link rel="icon" type="image/x-icon" href="/projects/bookShop/img/favicon.png">
+    <title>Hogwarts Library</title>
+    <title>Document</title>
+</head>
+<body>
+    <body onload="onInit()">
+        <section class="header">
+        <img class="harryPotterTitle" src="/projects/bookShop/img/harryPotterTitle.png" alt="Harry Potter Title">
+        <img class="hogwartLogo" src="/projects/bookShop/img/hogwartsColoredLogo.png" alt="Hogwart's Logo">
+    <h1 class="storeTitle">Hogwarts Library </h1>
+    <button class="addBookBtn" title="Add Book" onclick="onAddBook()">Add book</button>
+     <section class="cardVsTableContainer">
+    <button class="cardViewBtn" title="Card View" onclick="onSetView('cards')">Card View</button>
+     <button class="tableViewBtn" title="Table View" onclick="onSetView('table')">Table View</button>
+    </section>
+    <section class="pagingContainer">
+     <button class="nextPgBtn" onclick="onPaging('+1')">Next Page</button>
+     <button class="previousPgBtn disableBtn"onclick="onPaging('-1')">Previous Page</button>
+    </section>
+     <section class="bookFilter">
+        <h2 class="filterTitle">Filter By</h2>
+        <label class="maxPriceFilter">
+            Max Price:
+            <input type="range" min="" max="" value="" class="filterPriceRange"
+                onchange="this.title=this.value;onSetFilterBy({maxPrice: this.value})" />
+            <label class="minRateFilter">
+                Min Rate:
+            <input type="range" min="0" max="10" value="0" class="filterRateRange"
+                onchange="this.title=this.value;onSetFilterBy({minRate: this.value})" />
+           <label class="textFilter">
+                Text:
+            <input type="text" placeholder="Search..." class="textFilterInput"
+                onchange="this.title=this.value;onSetFilterBy({txt: this.value})" />
+                <button onclick="onSearchTxtSubmit()" class="txtSubmitBtn" type="submit">Submit</button>
+                <button onclick="onResetFilter()"class="clearSearchBtn">Clear Search</button>
+            </label>
+    </section>
+    <section class="filterValue">
+        <h2 class="filterValueTitle">Value</h2>
+        <h2 class="maxPriceValue"></h2>
+        <h2 class="rateValue">0</h2>
+    </section>
+    </section>
+    <section class="bookInfoContainer"></section>
+    <div class="modal">
+        <h3></h3>
+        <h4>Price <span></span> </h4>
+        <h5 class="bookDescriptionTitle">book Description</h5>
+        <section class="rateUpdate">
+            <button class="subtractRateModal">-</button>
+            <h1 class="bookRate"></h1>
+            <button class="addRateModal">+</button>
+        </section>
+        <p class="bookInfo"></p>
+        <button class="closeModal" onclick="onCloseModal()">Close</button>
+    </div>
+    <div class="user-msg"></div>
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/book.shoop.service.js"></script>
+    <script src="js/book.shoop.controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    
+}
+body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/projects/todo/img/background.jpg);
+  background-size: cover;
+ width: 98vw;
+ height: fit-content;
+}
+.infoBar{
+    border: none;
+    z-index: 3;
+    position:fixed;
+    display: flex;
+    width: 110%;
+    height: 40%;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.464);
+    border-bottom: 3px ridge white;
+    border-radius: 30px;
+}
+.form{
+    position: absolute;
+    background-image: url(/projects/todo/img/kiKo77LqT.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 34%;
+    height: 90%;
+    top: 7%;
+    left: 15%;
+    background-position: center;
+    -webkit-filter: drop-shadow(50px 50px 10px #222);
+    filter: drop-shadow(0px 15px 30px rgb(11, 11, 11));
+
+}
+.text{
+ position: absolute;
+  background-color: transparent;
+  margin-left: 32%;
+  height: 40%;
+  top: 25%;
+  width: 37%;
+  text-overflow: scroll;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(18, 18, 18);
+  font-size: 17px;
+  font-weight: bold;
+  border:none;
+vertical-align:top;
+    outline:none;
+}
+.addNoteBtn{
+    position: absolute;
+    top:76%;
+    left:66%;
+    font-size: 20px;
+    background-color: rgba(232, 156, 56, 0.4);
+    border-radius: 10px;
+    width: 13%;
+    transform: rotate(-45deg);
+    color: green;
+}
+.importanceSelector{
+    position: absolute;
+    top: 66%;
+    left:36%;
+    width: 30%;
+    background-color: rgba(197, 191, 191, 0.412);
+    color: rgb(9, 10, 10);
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+.todo-filters{
+  position: absolute;
+  width: 15%;
+  height:40%;
+  top: 52%;
+  left: 45%;
+  background-image: url(/projects/todo/img/kraft.png);
+  border-style: ridge;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  text-align: center;
+}
+.infoContainer{
+    position: absolute;
+    display: flex;
+    flex-direction:row;
+    width: 40%;
+    top: 30%;
+    left: 20%;
+    justify-content: flex-start;
+    align-items:flex-start
+}
+li button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+li {
+    cursor: pointer;
+} 
+.done {
+    text-decoration: line-through;
+    color: rgb(132, 131, 131);
+}
+.stat {
+    padding: 0.75em 1em;
+    margin-bottom: 10px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.note-container{
+box-sizing: border-box;
+position: relative;
+display: flex;
+height:fit-content;
+padding: 25px;
+margin-top:20%;
+height:auto;
+flex-wrap:wrap;
+justify-content:center;
+word-break: break-all;
+width: 85%;
+background-color: rgba(0, 0, 0, 0.303);
+border-radius: 30px;
+border-style: ridge;
+/* border-radius: 15px; */
+}
+.note {
+position: relative;
+display: flex;
+background-image: url(/projects/todo/img/kraft.png);
+ background-repeat: no-repeat;
+ background-size: auto;
+ background-position: center;
+border: 4px solid rgba(235, 233, 233, 0.561);  
+border-radius: 10px;
+height: 13rem;
+margin-right: 1%;
+width: 20rem;
+font-weight: bold;
+text-align:left;
+flex-direction: column;
+align-items: flex-start;
+padding: 2.5%;
+margin: 1%;
+font-size: 1.2rem;
+text-overflow: scroll;
+border-style: ridge;
+border-radius: 15px;
+}
+.timeStamp{
+position: absolute;
+background-color: rgba(180, 149, 86, 0.8);
+bottom: 8%; 
+right: 5%;   
+border-radius: 30px;
+text-align: center;
+border: 1px solid black;
+box-shadow: rgba(0, 0, 0, 0.82) 4px 4px 20px 2px ;font-size: 15px;
+width: 90%;
+height: 12%;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+} 
+.delete-icon{
+position: absolute;
+cursor: pointer;
+top: 4%;
+right: 4%;
+width: 7%;
+height: 10%;
+border: 1px solid rgb(255, 140, 0);
+border-radius: 19px;
+background-color: rgb(218, 177, 66);
+box-shadow: rgba(0, 0, 0, 0.82) 0px 0px 10px 1px ;
+color: rgb(162, 3, 3);
+}
+.delete-icon:hover{
+border: 1px solid rgb(185, 167, 167);
+box-shadow: rgba(132, 2, 2, 0.683) 0px 2px 20px 5px ;
+}
+text:focus{
+  outline: none;
+}
+.note:hover{
+  background-color: rgb(0, 110, 255);
+  cursor: cell;
+  color: white;
+}
+.lowImportance{
+box-shadow: rgba(251, 247, 4, 0.994) 0px 8px 28px, rgba(0, 0, 0, 0.971) 0px 15px 12px;
+color: rgba(109, 98, 5, 0.994);
+}
+.interImportance{
+box-shadow: rgba(244, 6, 232, 0.994) 0px 8px 38px, rgba(0, 0, 0, 0.971) 0px 15px 12px;
+color:rgba(76, 5, 72, 0.994)
+}
+.highImportance{
+box-shadow: rgba(213, 12, 15, 0.994) 0px 8px 38px, rgba(0, 0, 0, 0.971) 0px 15px 12px;
+color: rgba(188, 0, 6, 0.994);
+}
+p,label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+input {
+    margin: .4rem;
+}
+.noTodosTitle{
+    z-index: 8;
+    position: absolute;
+    height: 50px;
+    top:79%;
+    width: 30rem;
+    /* border: 10px solid white; */
+    color:white;
+    font-size: 40px;
+    left: 61%;
+    
+}
+.hide{
+    display: none;
+}

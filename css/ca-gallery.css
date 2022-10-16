@@ -23,6 +23,7 @@ h6 {
     font-weight: 700;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    color: wheat;
 }
 section {
     padding: 100px 0;
@@ -31,6 +32,7 @@ section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
+    color: wheat;
 }
 section h3.section-subheading {
     font-size: 16px;
@@ -247,6 +249,10 @@ header.masthead .intro-text .intro-heading {
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+    border: 2px ridge rgb(255, 183, 0);
+background-color: #f1f1f1;
+padding: 20px;
+border-radius: 40px;   
 }
 #portfolio .portfolio-item .portfolio-link {
     position: relative;
@@ -766,4 +772,15 @@ fieldset[disabled] .btn-xl:hover {
 .container {
     padding-right: 0;
     padding-left: 0;
+}
+.portfolioBackground{
+    background-color: #4d4946;
+    background-image: url(/img/programming-gc8c6d95bf_1920.png);
+    background-attachment:fixed ;
+    background-blend-mode:soft-light;
+   bac;
+    
+}
+.subPordtfolio{
+    color: wheat;
 }

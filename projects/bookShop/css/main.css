@@ -1,0 +1,566 @@
+body {
+    /* background-color: darkslateblue; */
+    color: whitesmoke;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/projects/bookShop/img/hogwardBackground.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(31, 31, 31, 0.262);
+    background-blend-mode:overlay;
+}
+.header{ 
+    border-right: 3px solid rgb(198, 156, 15);
+    border-left: 3px solid rgb(198, 156, 15);
+    background-color: rgba(0, 0, 0, 0.677);
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    height: 100%;
+    left:2%;
+    z-index: 8;
+}
+.harryPotterTitle{
+position: absolute;
+    display:flex ;
+    width: 90%;
+    height: 15%;
+    top: 2%;
+}
+.hogwartLogo{
+    transform: translate(-50,-50);
+    position: absolute;
+    width: 60%;
+    top: 17%;
+}
+.storeTitle{
+position: absolute;
+top:40% ;
+font-size: 40px;
+color: wheat;
+}
+.filterValue{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 14%;
+    width: 13%;
+    top: 54%;
+    right: 36%;
+    z-index: 19;
+    justify-content: center;
+}
+.filterValueTitle{
+    height: 15%;
+    width: 100%;
+    margin-bottom: 200px;
+    color: wheat;
+}
+.maxPriceValue{
+    position: absolute;
+    display: flex;
+    background-color: rgb(15, 30, 70);
+    border: 2px ridge rgb(190, 148, 12);
+    border-radius: 50px 50px 0 0; 
+    text-align: center;
+    height: 40%;
+    bottom:35%;
+width: 100%;
+margin-left: 40%;
+justify-content: center;
+align-items: center;
+transform: translate(-40%,0%);
+}
+.rateValue{
+    position: absolute;
+    display: flex;
+    text-align: center;
+border-top:2px ridge rgb(190, 148, 12);
+ background-color: rgb(15, 30, 70);
+    border: 2px ridge rgb(190, 148, 12);
+    border-radius: 0 0 50px 50px; 
+margin-top:80px;
+width: 100%;
+justify-content: center;
+align-items: center;
+height: 40%;
+
+margin-left: 40%;
+transform: translate(-40%,0%);
+}
+.addBookBtn{
+    position: absolute;
+    width:31% ;
+    height: 5%;
+    top: 55%;
+    right: 2%;
+    background-color: rgb(15, 30, 70);
+    border: 2px ridge rgb(190, 148, 12);
+    border-radius: 50px;
+}
+.cardVsTableContainer{
+    position: absolute;
+    border: 2px solid rgb(198, 156, 15);
+    width:30%;
+    height: 4.5%;
+    border-radius: 20px;
+    background-color: rgb(15, 30, 70);
+    top: 61.7%;
+    right: 2%;
+}
+.cardViewBtn{
+    position: absolute;
+    width:50% ;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 255, 0.008);
+    border-right: 1px solid wheat;
+}
+.tableViewBtn{
+    position: absolute;
+    width:50% ;
+    height: 100%;
+    top: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 255, 0.009);
+    border-left: 1px solid wheat;
+}
+.pagingContainer{
+    position: absolute;
+    border: 2px solid rgb(198, 156, 15);
+    width:44%;
+    height: 4.5%;
+    border-radius: 20px;
+    background-color: rgb(15, 30, 70);
+    top: 68%;
+    right: 3%;
+}
+.previousPgBtn{
+position: absolute;
+    width:50% ;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 255, 0.008);
+    border-right: 1px solid wheat;
+}
+.nextPgBtn{
+ position: absolute;
+    width:50% ;
+    height: 100%;
+    top: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 255, 0.009);
+    border-left: 1px solid wheat;
+}
+.bookFilter {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width:40% ;
+    height: 25%;
+    top: 16%;
+    margin-right: 45%;
+    background-color: rgb(15, 30, 70);
+    border: 3px ridge rgb(190, 148, 12);
+    color: wheat;
+    border-radius: 30px;
+}
+.filterTitle{
+    position:absolute;
+top:-22%; 
+left: 30px;   
+}
+.maxPriceFilter{
+position: absolute;
+    width:90% ;
+    height: 30%;
+    top: 7%;
+    left: 4%;
+    background-color: rgb(15, 30, 70);
+    color: wheat;
+}
+.minRateFilter{
+    position: absolute;
+    width:90% ;
+    height: 30%;
+    top: 80%;
+    left: 4%;
+    background-color: rgb(15, 30, 70);
+    color: wheat;
+}
+.textFilter{
+      position: absolute;
+    width:100% ;
+    height: 30%;
+    bottom: -200%;
+    left: 0%;
+    border-top:3px ridge rgb(190, 148, 12);
+    background-color: rgb(15, 30, 70);
+    color: wheat;
+}
+.textFilterInput{
+    width: 100%;
+    
+}
+.txtSubmitBtn{
+     background-color: rgb(15, 30, 70);
+    border: 3px ridge rgb(190, 148, 12);
+    color: wheat;
+    border-radius: 30px;
+    width: 68%;
+    left: 20%;
+    top: 53px;
+}
+.clearSearchBtn{
+ background-color: rgb(15, 30, 70);
+    border: 3px ridge rgb(190, 148, 12);
+    color: wheat;
+    border-radius: 30px;
+    width: 100%;
+    left: 0%;
+    top:120px
+}
+button {
+    position: absolute;
+    background-color: rgb(15, 30, 70);
+    /* border: 2px ridge rgb(190, 148, 12); */
+    color: wheat;
+    border:0;
+    padding: 6px 10px;
+    margin: 2px;
+    cursor: pointer; 
+    width: 10%;  
+    right: 15%; 
+}
+button:hover {
+    color: rgb(236, 128, 13);
+}
+.detailsBookBtn{
+width: 25%;
+height: 10%;
+border-radius: 30px;    
+left: 8%;
+bottom: 5%;
+border: 2px ridge rgb(190, 148, 12);
+}
+.updateBookBtn{
+width: 25%;
+height: 10%;
+right: 35%;
+bottom: 5%;
+border: 2px ridge rgb(190, 148, 12);
+ background-color: rgb(70, 55, 15);
+border-radius: 30px;    
+}
+.booksContainerCards {
+    position: relative;
+    display: flex;
+    top:0%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left:27%
+}
+.book-preview {
+    position: relative;
+    background-image: url("/projects/bookShop/img/hogwartsLogo.png");
+    background-color: rgba(30, 29, 21, 0.751);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode:soft-light;
+    display: flex;
+    flex-direction: column;
+    color: rgb(245, 242, 246);
+    width: 25%;
+    height: 45%;
+    margin-top: 1%;
+    margin-right: 3%;
+    border: 2px ridge rgb(190, 148, 12);
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px;
+}
+.book-preview h5 {
+    position: absolute;
+    margin-top: 17%;
+    right: 10%;
+    width: 80%;
+    /* transform: translate(-50%,0%); */
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+.book-preview h5 span{
+    color: tomato;
+    font-size: 1.5em;
+}
+.bookImgSizing{
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 55%;
+}
+.bookFilter hr {
+    margin: 30px;
+}
+.modal {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    top: 200px;
+    width: 20%;
+    left: 120%;
+    height: 60vh;
+    min-width: 300px;
+    text-align: center;
+    border: 2px ridge rgb(190, 148, 12);
+    border-radius: 50px;
+    transition: left .7s;
+}
+.modal.open {
+    left: 75%;
+    /* transition: left .7s; */
+}
+.modal h3{
+    color:pink;
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+.modal h4 span{
+    color:pink;
+}
+.bookPriceLine{
+
+}
+.modal > p {
+    text-align: left;
+}
+.user-msg {
+    position: fixed;
+    bottom: -100px;
+    right:10px;
+    background-color: #111;
+    padding: 10px;
+    border: 2px ridge rgb(190, 148, 12);
+    border-radius: 50px;
+    transition: bottom .7s;
+}
+.user-msg.open {
+    bottom: 10px;
+    
+}
+.hide{
+    display: none;
+}
+.btn-remove{
+    position: absolute;
+    background-color: rgb(99, 4, 4);
+    right: 8%;
+    height: 10%;
+    width: 20%;
+    bottom: 5%;
+    border-radius: 30px;
+    border: 2px ridge rgb(190, 148, 12);
+
+}
+.booksContainerTable{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(17, 17, 17, 0.781);
+    top:50%;
+    transform: translate(0%,-50%);
+    width:60%;
+    right: 8%;
+    padding: 2%;
+    border: 2px ridge rgb(190, 148, 12);
+    border-radius: 50px;
+    transition: left .7s;
+}
+table {
+			border:1px solid #b3adad;
+			border-collapse:collapse;
+			padding:5px;
+}
+table th {
+			border:1px solid #b3adad;
+			padding:5px;
+			background: #f0f0f04e;
+			color: #e9e5e5;
+}
+table td {
+			border:1px solid #b3adad;
+			text-align:center;
+			padding:5px;
+			background: #ffffff0f;
+			color: #f0ecec;
+}
+.btnRemoveTable{
+        width: 27%;
+        height: 50%;
+        left: 68%;
+        top:25%;
+        background-color: rgb(70, 15, 15);
+        border: 2px ridge rgb(190, 148, 12);
+            border-radius: 50px;
+
+        /* height: 1%; */
+}
+.updateBookBtnTable{
+        width: 27%;
+        height: 50%;
+        top: 25%;
+        left:36%;
+        background-color: rgb(70, 55, 15);
+        border: 2px ridge rgb(190, 148, 12);
+            border-radius: 50px;
+
+}
+.detailsBookBtnTable{
+        width: 27%;
+        height: 50%;
+        left: 4%;
+        top:25%;
+        background-color: rgb(15, 30, 70);
+        border: 2px ridge rgb(190, 148, 12);
+            border-radius: 50px;
+
+}
+.tableActions{
+            justify-content: space-between;
+            position: relative;
+            width: 97%;
+            /* height: 50%; */
+            border: 2px ridge rgb(190, 148, 12);
+}
+.tableSize{
+        /* position: absolute; */
+        width: 90%;
+        margin-left: 5%;
+}
+.tableBookName{
+         width: 40%;
+         border: 2px ridge rgb(190, 148, 12);
+}
+.tableBookId{
+        width: 10%;
+        font-size: 13px;
+        border: 2px ridge rgb(190, 148, 12);
+}
+.tableBookPrice{
+        width: 10%;
+        font-size: 25px;
+        color: rgb(226, 179, 28);
+        border: 2px ridge rgb(190, 148, 12);
+
+}
+.bookInfoContainer{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height:100vh;
+}
+.bookDescriptionTitle{
+position: absolute;
+height: 75%;
+top: 7%;
+width: 40%;
+font-size: 17px;
+}
+.bookInfo{
+position: absolute;
+height: 60%;
+top: 13%;
+width: 80%;
+font-size: 17px;
+
+
+}
+.closeModal{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:87%;
+    right: 11%;
+    width:25%;
+    align-items: center;
+    justify-content: center;
+    height: 8%;
+    background-color: rgb(15, 30, 70);
+    border: 2px ridge rgb(190, 148, 12);
+    border-radius: 50px;
+}
+.rateUpdate{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top:87.2%;
+    left: 11%;
+    width:40%;
+    height: 7.5%;
+    background-color: rgb(15, 30, 70);
+    border: 2px ridge rgb(190, 148, 12);
+    border-radius: 50px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+.subtractRateModal{
+left:0%;
+width:33%;
+height: 100%;
+background-color: transparent;
+ border-right: 2px ridge rgb(190, 148, 12);
+}
+.addRateModal{
+right:0%;
+width:33%;
+height: 100%;
+ border-left: 2px ridge rgb(190, 148, 12);
+background-color: transparent;
+}
+.bookRate{
+margin-left:50%;
+transform: translate(-50%,-50%);
+margin-top: 50%;
+width:33%;
+height: 100%;
+ /* border-left: 2px ridge rgb(190, 148, 12); */
+background-color: transparent;
+}
+.disableBtn{
+cursor: not-allowed;
+pointer-events: none;
+color: rgb(98, 96, 96);
+}
+.clickable{
+ cursor: pointer;   
+}
+.clickable:hover{
+        background-color: rgb(15, 30, 70);
+
+}
+.bookName{
+    position: absolute;
+    top:1%;
+}

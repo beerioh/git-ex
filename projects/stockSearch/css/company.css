@@ -1,0 +1,197 @@
+
+body {
+    justify-content:center;
+    display: flex;
+    background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%),
+    #d2d2d2 url(http://stash.rachelnabors.com/24ways2012/background_clouds.png);
+}
+.container {
+    border:1px solid gray;
+    background-color: rgba(255, 255, 255, 0.955);
+    display: flex;
+    position:relative; 
+    height:40rem;
+    margin-top: 1%;
+    width:80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, .25), 0 3px 13px 11px rgba(0, 0, 0, 0.16);
+    z-index: 10;
+}
+#companyImage {
+  display: flex;
+    position:absolute;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, .25), 0 3px 13px 1px rgba(0, 0, 0, 0.16);
+    height: 30%; 
+    width: 15%;
+    top: 3%;
+    left: 2%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.infoContainer {
+   position:absolute;
+   left : 19%;
+   width: 70%;
+   height:100%;
+}
+#companyName{
+ position:absolute;
+font-size: 2.2rem;
+color : blue;
+top: 3%;
+font-family:Arial, Helvetica, sans-serif;
+}
+#stockPrice{
+font-family:Arial, Helvetica, sans-serif;
+ position:absolute;
+font-size:2em ;
+top: 11%;
+}
+#stockPriceT{
+font-family:Arial, Helvetica, sans-serif;
+position:absolute;
+font-size:1em ;
+top: 17%;
+}
+#changeValue{
+font-family:Arial, Helvetica, sans-serif;
+ position:absolute;
+ font-size:2em ;
+left: 13%;
+top: 11%;
+}
+#stockValueT{
+font-family:Arial, Helvetica, sans-serif;
+ position:absolute;
+ font-size:1em ;
+left: 13%;
+top: 17%;
+}
+#sector{
+color: blue;
+position:absolute;
+font-family:Arial, Helvetica, sans-serif;
+font-size:1em ;
+top: 22%;
+}
+#sectorT{
+position:absolute;
+ font-family:Arial, Helvetica, sans-serif;
+font-size:1em ;
+top: 25%;
+}
+#text-container{
+border: 1px solid black;
+border-radius: 20px;
+position:relative;
+font-family:Arial, Helvetica, sans-serif;
+left: 1%;
+top: 36%;
+bottom: 6%;
+width:33%;
+z-index: 10;
+height: 60%;
+padding: 10px;
+box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.25), 0 3px 15px 1px rgba(0, 0, 0, 0.16);
+}
+#description{
+position:absolute;
+border:none;
+overflow: hidden;
+overflow-y: scroll;
+overflow-x:auto;
+font-family:Arial, Helvetica, sans-serif;
+font-size:19px ;
+width:96%;
+z-index: 10;
+height: 96%;
+}
+#companyLink{
+ position:absolute;
+ font-family:Arial, Helvetica, sans-serif;
+font-size: 1rem;
+top: 30%;
+}
+#chart{
+    justify-content: center;
+    border-radius: 20px;
+    position: absolute;
+    right: 2%;
+    bottom:4%;
+    width: 62%;
+    height: 80%;
+}
+#one{
+    position: absolute;
+    border: 1px solid black;
+    top:60%;
+    left: 68%;
+    width: 1px;
+}
+#spinnerChart {
+ position: absolute;
+    z-index: 10;
+   float: right;
+   bottom: 48%; 
+}
+#spinnerData {
+    position: absolute;
+    left: 20%;
+    top: 15%;
+}
+.tuna {
+  animation: walk-cycle 1s steps(12) infinite;
+  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  margin-left: -200px;
+  transform: translateZ(0); /* offers a bit of a performance boost by pushing some of this processing to the GPU in Safari*/
+}
+@keyframes walk-cycle {  
+  0% {background-position: 0 0; } 
+  100% {background-position: 0 -2391px; } 
+}
+.foreground, .midground, .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  translate: 3d (0,0,0); 
+}
+.foreground {
+  animation: parallax_fg linear 10s infinite both;
+  background:  url(http://stash.rachelnabors.com/24ways2012/foreground_grass.png) 0 100% repeat-x;
+  z-index: 3;
+}
+@keyframes parallax_fg {  
+  0% { background-position: -3584px 100%;} 
+  100% {background-position: 0 100%; } 
+}
+.midground {
+  animation: parallax_mg linear 20s infinite;
+  background:  url(http://stash.rachelnabors.com/24ways2012/midground_grass.png) 0 100% repeat-x;
+  z-index: 2;
+}
+@keyframes parallax_mg {  
+  0% { background-position: -3000px 100%;} 
+  100% {background-position: 0 100%; } 
+}
+.background {
+  background-image:
+    url(http://stash.rachelnabors.com/24ways2012/background_mountain5.png),
+    url(http://stash.rachelnabors.com/24ways2012/background_mountain4.png),
+    url(http://stash.rachelnabors.com/24ways2012/background_mountain3.png),
+    url(http://stash.rachelnabors.com/24ways2012/background_mountain2.png),
+    url(http://stash.rachelnabors.com/24ways2012/background_mountain1.png);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  z-index: 1;
+  animation: parallax_bg linear 40s infinite;
+}
+@keyframes parallax_bg {
+  100% { background-position-x: 2400px, 2000px, 1800px, 1600px, 1200px;}
+}
+

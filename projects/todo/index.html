@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo MVC</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="onInit()" >
+    <div class="infoBar">
+        <form class="form" onsubmit="onAddTodo(event)">
+        <textarea class="text" type="text" name="txt"  placeholder="What todo?"></textarea>
+        <fieldset class="importanceSelector">
+                <legend>Select Importance Level</legend>
+                <div>
+                <input class="highImportance" value="highImportance" onclick="importanceValue('highImportance')" type="radio" id="huey" name="drone" value="high"
+                        checked>
+                <label for="huey">High</label>
+                </div>
+
+                <div>
+                <input value="interImportance" onclick="importanceValue('interImportance')"type="radio" id="dewey" name="drone" value="dewey">
+                <label for="dewey">Mid</label>
+                </div>
+
+                <div>
+                <input value="lowImportance" onclick="importanceValue('lowImportance')"type="radio" id="louie" name="drone" value="louie">
+                <label for="louie">Low</label>
+                </div>
+        </fieldset>
+                <button class="addNoteBtn">Add</button>           
+        </form>
+        <section class="todo-filters">
+          <h1>Todo MVC</h1>
+          <div class="infoContainer">
+             <section class="stat">
+                <select onchange="onSetFilter(this.value)">
+                    <option value="">Filter...</option>
+                    <option value="active">Active</option>
+                    <option value="done">Done</option>
+                </select>
+                 <select onchange="onSortSelection(this.value)">
+                    <option value="">Sort By...</option>
+                    <option value="txt">Txt</option>
+                    <option value="createdAt">Created</option>
+                    <option value="importance">Importance</option>
+                </select>
+                <input type="text" oninput="onSetFilterByTxt(this.value)" placeholder="Type something..." />
+                Total: <span class="total">3</span> Active: <span class="active">2</span>
+            </div>
+          </section>
+        </section>
+         <h1 class="noTodosTitle"></h1>
+    </div>
+    
+    <ul class="note-container">
+    </ul>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/todo.service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+     <div class="mainContainer">
+            <div class="gameContainer">
+     <div class="topBar">
+         <button class="startGameBtn" onclick="initGame()"></button>
+         <div class="timerDec">00</div>
+         <div class="timerSec"></div>
+         <div class="timerMin"></div>
+     </div>
+     <div class="difLevels">
+       <fieldset id="status">
+          <legend>Difficulty Level</legend>
+          <div>
+            <input type="radio" id="Beginner" name="drone" value="huey"
+                  checked>
+            <label for="huey">Beginner</label>
+           </div>
+           <div>
+            <input type="radio" id="Advanced" name="drone" value="dewey">
+            <label for="dewey">Advanced</label>
+           </div>
+           <div>
+            <input type="radio" id="Expert" name="drone" value="louie">
+            <label for="louie">Expert</label>
+           </div>
+          
+         </fieldset>
+        </div>
+         <table class="board">
+           <tbody class="board-cells">
+           </tbody>
+         </table>
+     <!-- <div class="scoreTable"></div> -->
+      </div>
+     </div>
+
+
+
+    <script src="./js/touchNums.js"></script>
+</body>
+</html>
