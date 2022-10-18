@@ -133,7 +133,7 @@ text-decoration-color: white;
   height: 100%;
   position: absolute;
   top: 0; left: 0;
-  translate: 3d;(0,0,0); 
+  translate: 3d(0,0,0); 
 }
 
 .foreground {
