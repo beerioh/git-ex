@@ -23,7 +23,7 @@ h6 {
     font-weight: 700;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    color: wheat;
+    color: rgb(246, 206, 131);
 }
 section {
     padding: 100px 0;
@@ -32,7 +32,7 @@ section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
-    color: wheat;
+    color: rgb(241, 200, 124);
 }
 section h3.section-subheading {
     font-size: 16px;
@@ -250,7 +250,7 @@ header.masthead .intro-text .intro-heading {
     right: 0;
     margin: 0 0 15px;
     border: 2px ridge rgb(255, 183, 0);
-background-color: #f1f1f1;
+background-color: #ffffff;
 padding: 20px;
 border-radius: 40px;   
 }
@@ -775,12 +775,12 @@ fieldset[disabled] .btn-xl:hover {
 }
 .portfolioBackground{
     background-color: #4d4946;
-    background-image: url(/img/programming-gc8c6d95bf_1920.png);
+    background-image: url(../img/programming-gc8c6d95bf_1920.png);
     background-attachment:fixed ;
     background-blend-mode:soft-light;
-   
+
     
 }
 .subPordtfolio{
-    color: wheat;
+    color: rgb(240, 204, 137);
 }

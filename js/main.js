@@ -19,7 +19,7 @@ function renderPortfolio() {
           <i class="fa fa-plus fa-3x"></i>
         </div>
       </div>
-      <img class="img-fluid" src="img/portfolio/${project.id}.png" alt="${
+      <img class="img-fluid" src="../img/portfolio/${project.id}.png" alt="${
       project.name
     } pic">
     </a>
@@ -45,9 +45,9 @@ function renderModalInfo() {
   const strHTML = `
   <h2>${project.name}</h2>
   <p class="item-intro text-muted">${project.title}.</p>
-  <img class="img-fluid d-block mx-auto" src="img/portfolio/${project.id}.png" alt="">
+  <img class="img-fluid d-block mx-auto" src="../img/portfolio/${project.id}.png" alt="">
   <p>${project.desc}</p>
-  <button class="btn btn-primary"><a href="projects/${project.id}/index.html" target="_blank">Check it Out!</a></button>
+  <button class="btn btn-primary"><a href="../projects/${project.id}/index.html" target="_blank">Check it Out!</a></button>
   `
 
   $('.modal-body').html(strHTML)

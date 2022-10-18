@@ -15,7 +15,7 @@ body {
     sans-serif;
   justify-content: center;
   align-items: center;
-  background-image: url(/projects/todo/img/background.jpg);
+  background-image: url(../projects/todo/img/background.jpg);
   background-size: cover;
  width: 98vw;
  height: fit-content;
@@ -34,7 +34,7 @@ body {
 }
 .form{
     position: absolute;
-    background-image: url(/projects/todo/img/kiKo77LqT.png);
+    background-image: url(../projects/todo/img/kiKo77LqT.png);
     background-repeat: no-repeat;
     background-size:contain;
     width: 34%;
@@ -90,7 +90,7 @@ vertical-align:top;
   height:40%;
   top: 52%;
   left: 45%;
-  background-image: url(/projects/todo/img/kraft.png);
+  background-image: url(../projects/todo/img/kraft.png);
   border-style: ridge;
   padding: 1rem;
   display: flex;
@@ -147,7 +147,7 @@ border-style: ridge;
 .note {
 position: relative;
 display: flex;
-background-image: url(/projects/todo/img/kraft.png);
+background-image: url(../projects/todo/img/kraft.png);
  background-repeat: no-repeat;
  background-size: auto;
  background-position: center;

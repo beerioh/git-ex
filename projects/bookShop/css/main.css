@@ -11,7 +11,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url("/projects/bookShop/img/hogwardBackground.jpg");
+    background-image: url("../projects/bookShop/img/hogwardBackground.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -278,7 +278,7 @@ border-radius: 30px;
 }
 .book-preview {
     position: relative;
-    background-image: url("/projects/bookShop/img/hogwartsLogo.png");
+    background-image: url("../projects/bookShop/img/hogwartsLogo.png");
     background-color: rgba(30, 29, 21, 0.751);
     background-size: 90%;
     background-repeat: no-repeat;
