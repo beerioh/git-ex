@@ -357,7 +357,7 @@ color: blueviolet;
 }
 .mineImg{
   background-color: none;
-  background-image: url(../img/mine.png);
+  background-image: url(../img/mine.PNG);
   background-size: contain;
 }
 .bgGreen{
