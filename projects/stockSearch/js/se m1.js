@@ -5,7 +5,7 @@ const apiAddonEnd = "&limit=10&exchange=NASDAQ";
 const input = document.getElementById("inputL");
 const output = document.getElementById("output");
 const spinnerOn2 = document.getElementById("spinner2");
-const linkAddon = "/projects/stockSearch/html/company.html?symbol="
+const linkAddon = "./html/company.html?symbol="
 
 button.addEventListener("click", (inputValue));
 
